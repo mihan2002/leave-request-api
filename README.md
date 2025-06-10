@@ -52,7 +52,7 @@ Edit src/main/resources/application.properties:
   spring.datasource.password=your_password
 ```
 
-### 3. Run the Backend
+### 3. Run the backend
 
 ```bash
 ./mvnw spring-boot:run
