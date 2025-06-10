@@ -63,7 +63,7 @@ Edit `src/main/resources/application.properties` file to configure the database 
 
 
 ### 4. Frontend setup (Optional)
-  If you haven't setup the frontend application, use below link to setup the frontend application.
+  If you haven't setup the frontend application, please use below link to setup the frontend application.
 ```bash
   https://github.com/mihan2002/leave-request-ui.git
 ```
