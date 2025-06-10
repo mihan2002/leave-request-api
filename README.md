@@ -33,7 +33,7 @@ The application includes
 
 Prerequisites: Java 17+, Maven 3.9+, PostgreSQL (tested on)
 
-### 1. Clone the Repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/mihan2002/leave-request-api.git
