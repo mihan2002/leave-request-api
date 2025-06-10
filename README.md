@@ -41,7 +41,7 @@ Prerequisites: Java 17+, Maven 3.9+, PostgreSQL 15 (tested on)
 
 ### 2. Configure the enviroment
 
-Change the directory to the following path 
+Change the directory to the `leave-request-api` path.
 
 ```bash
   cd leave-request-api
