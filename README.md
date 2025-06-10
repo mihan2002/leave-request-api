@@ -1,12 +1,11 @@
 # 📝 Leave Request Application
 
 This is a full-stack **Leave Request Management** system built with a **React (Vite)** frontend and a **Spring Boot** backend. The backend uses **PostgreSQL** for data storage and implements **JWT-based authentication and authorization**.
+
 **This document contains only the backend setup**
 ---
 
 ## 🔧 Tech Stack
-
-### Backend
 
 - Spring Boot
 - Spring Security
@@ -17,8 +16,6 @@ This is a full-stack **Leave Request Management** system built with a **React (V
 ---
 
 ## 📁 Project Structure
-
-### Backend
 
 Located inside the  `/leave-request-api` folder:
 
