@@ -40,7 +40,7 @@ git clone https://github.com/mihan2002/leave-request-api.git
 cd leave-request-api
 ```
 
-### 2. Backend Setup
+### 2. Configure the enviroment
 
 Configuring Application Properties
 
@@ -52,14 +52,14 @@ Edit src/main/resources/application.properties:
   spring.datasource.password=your_password
 ```
 
-### 4. Run the Backend
+### 3. Run the Backend
 
 ```bash
 ./mvnw spring-boot:run
 ```
 
 
-### 5.Frontend setup(Optional)
+### 4.Frontend setup(Optional)
 -if you didnt setup the frontend use this link and follow the guide 
 ```bash
   https://github.com/mihan2002/leave-request-ui.git
