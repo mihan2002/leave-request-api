@@ -9,7 +9,7 @@
 		<relativePath/>
 	</parent>
 	<groupId>com.mihan</groupId>
-	<artifactId>leveform</artifactId>
+	<artifactId>leave-request-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>leveform</name>
 	<description>leve form backend</description>
