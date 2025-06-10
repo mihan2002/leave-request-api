@@ -31,7 +31,7 @@ The application includes
 
 ## 🚀 Getting Started
 
-Prerequisites: Java 17+, Maven 3.9+, PostgreSQL (tested on)
+Prerequisites: Java 17+, Maven 3.9+, PostgreSQL 15 (tested on)
 
 ### 1. Clone the repository
 
