@@ -41,14 +41,14 @@ Prerequisites: Java 17+, Maven 3.9+, PostgreSQL 15 (tested on)
 
 ### 2. Configure the enviroment
 
-Change the directory to the `leave-request-api` path.
+Change the directory to `leave-request-api`.
 
 ```bash
   cd leave-request-api
 ```
 Configuring Application Properties
 
-Edit src/main/resources/application.properties:
+Edit `src/main/resources/application.properties` as follows to configure the database connection details.
 
 ```bash
   spring.datasource.url=your_database_url
