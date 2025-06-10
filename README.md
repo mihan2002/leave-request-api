@@ -46,14 +46,13 @@ Change the directory to `leave-request-api`.
 ```bash
   cd leave-request-api
 ```
-Configuring Application Properties
 
 Edit `src/main/resources/application.properties` as follows to configure the database connection details.
 
 ```bash
-  spring.datasource.url=your_database_url
-  spring.datasource.username=your_username
-  spring.datasource.password=your_password
+  spring.datasource.url=jdbc:postgresql://localhost:<your port number>/<database name>
+  spring.datasource.username=myuser
+  spring.datasource.password=mypassword
 ```
 
 ### 3. Run the backend
