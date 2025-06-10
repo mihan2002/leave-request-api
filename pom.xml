@@ -11,8 +11,8 @@
 	<groupId>com.mihan</groupId>
 	<artifactId>leave-request-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>leveform</name>
-	<description>leve form backend</description>
+	<name>leave-request-api</name>
+	<description>leave form backend</description>
 	<url/>
 	<licenses>
 		<license/>
