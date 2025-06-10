@@ -1,0 +1,260 @@
+2025-06-10T17:18:47.098+05:30  INFO 14268 --- [leave-request-api] [restartedMain] com.mihan.leveform.LeveformApplication   : Starting LeveformApplication using Java 21.0.1 with PID 14268 (D:\office\leave-request-api\target\classes started by mihan in D:\office\leave-request-api)
+2025-06-10T17:18:47.101+05:30  INFO 14268 --- [leave-request-api] [restartedMain] com.mihan.leveform.LeveformApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-10T17:18:47.158+05:30  INFO 14268 --- [leave-request-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-10T17:18:47.158+05:30  INFO 14268 --- [leave-request-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-10T17:18:48.014+05:30  INFO 14268 --- [leave-request-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-10T17:18:48.086+05:30  INFO 14268 --- [leave-request-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 3 JPA repository interfaces.
+2025-06-10T17:18:48.856+05:30  INFO 14268 --- [leave-request-api] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-10T17:18:48.874+05:30  INFO 14268 --- [leave-request-api] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-10T17:18:48.874+05:30  INFO 14268 --- [leave-request-api] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-10T17:18:48.923+05:30  INFO 14268 --- [leave-request-api] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-10T17:18:48.924+05:30  INFO 14268 --- [leave-request-api] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1764 ms
+2025-06-10T17:18:49.165+05:30  INFO 14268 --- [leave-request-api] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-10T17:18:49.220+05:30  INFO 14268 --- [leave-request-api] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-10T17:18:49.258+05:30  INFO 14268 --- [leave-request-api] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-10T17:18:49.556+05:30  INFO 14268 --- [leave-request-api] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-10T17:18:49.585+05:30  INFO 14268 --- [leave-request-api] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-10T17:18:49.788+05:30  INFO 14268 --- [leave-request-api] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@61c87a71
+2025-06-10T17:18:49.789+05:30  INFO 14268 --- [leave-request-api] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-10T17:18:49.822+05:30  WARN 14268 --- [leave-request-api] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-10T17:18:49.846+05:30  INFO 14268 --- [leave-request-api] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-10T17:18:50.742+05:30  INFO 14268 --- [leave-request-api] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-10T17:18:50.786+05:30  INFO 14268 --- [leave-request-api] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T17:18:51.158+05:30  INFO 14268 --- [leave-request-api] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authProvider
+2025-06-10T17:18:51.159+05:30  WARN 14268 --- [leave-request-api] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-10T17:18:51.248+05:30  WARN 14268 --- [leave-request-api] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-10T17:18:51.812+05:30  INFO 14268 --- [leave-request-api] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-10T17:18:51.847+05:30  INFO 14268 --- [leave-request-api] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-10T17:18:51.859+05:30  INFO 14268 --- [leave-request-api] [restartedMain] com.mihan.leveform.LeveformApplication   : Started LeveformApplication in 5.398 seconds (process running for 5.985)
+2025-06-10T17:19:39.269+05:30  INFO 14268 --- [leave-request-api] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-10T17:19:39.269+05:30  INFO 14268 --- [leave-request-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-10T17:19:39.270+05:30  INFO 14268 --- [leave-request-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-10T17:19:39.551+05:30 DEBUG 14268 --- [leave-request-api] [http-nio-8080-exec-2] org.hibernate.SQL                        : select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-06-10T17:19:39.870+05:30 DEBUG 14268 --- [leave-request-api] [http-nio-8080-exec-2] org.hibernate.SQL                        : select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-06-10T17:19:40.199+05:30 DEBUG 14268 --- [leave-request-api] [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into audit_log (action,additional_info,ip_address,resource,timestamp,username) values (?,?,?,?,?,?)
+2025-06-10T17:19:40.367+05:30 DEBUG 14268 --- [leave-request-api] [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-06-10T17:19:40.367+05:30 DEBUG 14268 --- [leave-request-api] [http-nio-8080-exec-6] org.hibernate.SQL                        : select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-06-10T17:19:40.380+05:30 DEBUG 14268 --- [leave-request-api] [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-06-10T17:19:40.386+05:30 DEBUG 14268 --- [leave-request-api] [http-nio-8080-exec-6] org.hibernate.SQL                        : select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-06-10T17:19:40.394+05:30 DEBUG 14268 --- [leave-request-api] [http-nio-8080-exec-6] org.hibernate.SQL                        : select lr1_0.id,lr1_0.end_date,lr1_0.reason,lr1_0.start_date,lr1_0.type,lr1_0.user_id from leave_requests lr1_0 where lr1_0.user_id=?
+2025-06-10T17:19:40.395+05:30 DEBUG 14268 --- [leave-request-api] [http-nio-8080-exec-5] org.hibernate.SQL                        : select lr1_0.id,lr1_0.end_date,lr1_0.reason,lr1_0.start_date,lr1_0.type,lr1_0.user_id from leave_requests lr1_0 where lr1_0.user_id=?
+2025-06-10T17:19:40.403+05:30 DEBUG 14268 --- [leave-request-api] [http-nio-8080-exec-5] org.hibernate.SQL                        : insert into audit_log (action,additional_info,ip_address,resource,timestamp,username) values (?,?,?,?,?,?)
+2025-06-10T17:19:40.403+05:30 DEBUG 14268 --- [leave-request-api] [http-nio-8080-exec-6] org.hibernate.SQL                        : insert into audit_log (action,additional_info,ip_address,resource,timestamp,username) values (?,?,?,?,?,?)
+2025-06-10T17:21:11.997+05:30  INFO 14268 --- [leave-request-api] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-10T17:21:12.002+05:30  INFO 14268 --- [leave-request-api] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-10T17:21:12.007+05:30  INFO 14268 --- [leave-request-api] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T17:21:12.012+05:30  INFO 14268 --- [leave-request-api] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-10T17:21:12.019+05:30  INFO 14268 --- [leave-request-api] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-10T17:21:21.569+05:30  INFO 15836 --- [leave-request-api] [restartedMain] c.m.l.LeveformApplication                : Starting LeveformApplication using Java 21.0.1 with PID 15836 (D:\office\leave-request-api\target\classes started by mihan in D:\office\leave-request-api)
+2025-06-10T17:21:21.571+05:30  INFO 15836 --- [leave-request-api] [restartedMain] c.m.l.LeveformApplication                : No active profile set, falling back to 1 default profile: "default"
+2025-06-10T17:21:21.630+05:30  INFO 15836 --- [leave-request-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-10T17:21:21.631+05:30  INFO 15836 --- [leave-request-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-10T17:21:22.616+05:30  INFO 15836 --- [leave-request-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-10T17:21:22.695+05:30  INFO 15836 --- [leave-request-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 3 JPA repository interfaces.
+2025-06-10T17:21:23.472+05:30  INFO 15836 --- [leave-request-api] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-10T17:21:23.491+05:30  INFO 15836 --- [leave-request-api] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-10T17:21:23.491+05:30  INFO 15836 --- [leave-request-api] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-10T17:21:23.548+05:30  INFO 15836 --- [leave-request-api] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-10T17:21:23.549+05:30  INFO 15836 --- [leave-request-api] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1917 ms
+2025-06-10T17:21:23.803+05:30  INFO 15836 --- [leave-request-api] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-10T17:21:23.861+05:30  INFO 15836 --- [leave-request-api] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-10T17:21:23.913+05:30  INFO 15836 --- [leave-request-api] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-10T17:21:24.231+05:30  INFO 15836 --- [leave-request-api] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-10T17:21:24.264+05:30  INFO 15836 --- [leave-request-api] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-10T17:21:24.468+05:30  INFO 15836 --- [leave-request-api] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1e4c7708
+2025-06-10T17:21:24.470+05:30  INFO 15836 --- [leave-request-api] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-10T17:21:24.512+05:30  WARN 15836 --- [leave-request-api] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-10T17:21:24.550+05:30  INFO 15836 --- [leave-request-api] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-10T17:21:25.518+05:30  INFO 15836 --- [leave-request-api] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-10T17:21:25.566+05:30  INFO 15836 --- [leave-request-api] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T17:21:25.963+05:30  INFO 15836 --- [leave-request-api] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authProvider
+2025-06-10T17:21:25.963+05:30  WARN 15836 --- [leave-request-api] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-10T17:21:26.067+05:30  WARN 15836 --- [leave-request-api] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-10T17:21:26.683+05:30  INFO 15836 --- [leave-request-api] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-10T17:21:26.718+05:30  INFO 15836 --- [leave-request-api] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-10T17:21:26.732+05:30  INFO 15836 --- [leave-request-api] [restartedMain] c.m.l.LeveformApplication                : Started LeveformApplication in 5.83 seconds (process running for 6.667)
+2025-06-10T17:23:06.636+05:30  INFO 15836 --- [leave-request-api] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-10T17:23:06.639+05:30  INFO 15836 --- [leave-request-api] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-10T17:23:06.643+05:30  INFO 15836 --- [leave-request-api] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T17:23:06.647+05:30  INFO 15836 --- [leave-request-api] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-10T17:23:06.653+05:30  INFO 15836 --- [leave-request-api] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-10T17:23:08.779+05:30  INFO 20496 --- [leave-request-api] [restartedMain] c.m.l.LeveformApplication                : Starting LeveformApplication using Java 21.0.1 with PID 20496 (D:\office\leave-request-api\target\classes started by mihan in D:\office\leave-request-api)
+2025-06-10T17:23:08.783+05:30  INFO 20496 --- [leave-request-api] [restartedMain] c.m.l.LeveformApplication                : No active profile set, falling back to 1 default profile: "default"
+2025-06-10T17:23:08.849+05:30  INFO 20496 --- [leave-request-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-10T17:23:08.849+05:30  INFO 20496 --- [leave-request-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-10T17:23:09.725+05:30  INFO 20496 --- [leave-request-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-10T17:23:09.800+05:30  INFO 20496 --- [leave-request-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 3 JPA repository interfaces.
+2025-06-10T17:23:10.519+05:30  INFO 20496 --- [leave-request-api] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-10T17:23:10.545+05:30  INFO 20496 --- [leave-request-api] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-10T17:23:10.545+05:30  INFO 20496 --- [leave-request-api] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-10T17:23:10.622+05:30  INFO 20496 --- [leave-request-api] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-10T17:23:10.622+05:30  INFO 20496 --- [leave-request-api] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1772 ms
+2025-06-10T17:23:10.904+05:30  INFO 20496 --- [leave-request-api] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-10T17:23:10.953+05:30  INFO 20496 --- [leave-request-api] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-10T17:23:10.989+05:30  INFO 20496 --- [leave-request-api] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-10T17:23:11.303+05:30  INFO 20496 --- [leave-request-api] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-10T17:23:11.336+05:30  INFO 20496 --- [leave-request-api] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-10T17:23:11.518+05:30  INFO 20496 --- [leave-request-api] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@38afa88b
+2025-06-10T17:23:11.521+05:30  INFO 20496 --- [leave-request-api] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-10T17:23:11.557+05:30  WARN 20496 --- [leave-request-api] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-10T17:23:11.578+05:30  INFO 20496 --- [leave-request-api] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-10T17:23:12.510+05:30  INFO 20496 --- [leave-request-api] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-10T17:23:12.557+05:30  INFO 20496 --- [leave-request-api] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T17:23:12.981+05:30  INFO 20496 --- [leave-request-api] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authProvider
+2025-06-10T17:23:12.982+05:30  WARN 20496 --- [leave-request-api] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-10T17:23:13.114+05:30  WARN 20496 --- [leave-request-api] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-10T17:23:13.742+05:30  INFO 20496 --- [leave-request-api] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-10T17:23:13.778+05:30  INFO 20496 --- [leave-request-api] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-10T17:23:13.789+05:30  INFO 20496 --- [leave-request-api] [restartedMain] c.m.l.LeveformApplication                : Started LeveformApplication in 5.663 seconds (process running for 6.305)
+2025-06-10T17:23:44.884+05:30  INFO 20496 --- [leave-request-api] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-10T17:23:44.889+05:30  INFO 20496 --- [leave-request-api] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-10T17:23:44.893+05:30  INFO 20496 --- [leave-request-api] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T17:23:44.896+05:30  INFO 20496 --- [leave-request-api] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-10T17:23:44.904+05:30  INFO 20496 --- [leave-request-api] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-10T17:24:07.168+05:30  INFO 20880 --- [leave-request-api] [restartedMain] c.m.l.LeveformApplication                : Starting LeveformApplication using Java 21.0.1 with PID 20880 (D:\office\leave-request-api\target\classes started by mihan in D:\office\leave-request-api)
+2025-06-10T17:24:07.170+05:30  INFO 20880 --- [leave-request-api] [restartedMain] c.m.l.LeveformApplication                : No active profile set, falling back to 1 default profile: "default"
+2025-06-10T17:24:07.225+05:30  INFO 20880 --- [leave-request-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-10T17:24:07.225+05:30  INFO 20880 --- [leave-request-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-10T17:24:08.092+05:30  INFO 20880 --- [leave-request-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-10T17:24:08.167+05:30  INFO 20880 --- [leave-request-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 3 JPA repository interfaces.
+2025-06-10T17:24:08.870+05:30  INFO 20880 --- [leave-request-api] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-10T17:24:08.889+05:30  INFO 20880 --- [leave-request-api] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-10T17:24:08.889+05:30  INFO 20880 --- [leave-request-api] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-10T17:24:08.936+05:30  INFO 20880 --- [leave-request-api] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-10T17:24:08.937+05:30  INFO 20880 --- [leave-request-api] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1710 ms
+2025-06-10T17:24:09.174+05:30  INFO 20880 --- [leave-request-api] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-10T17:24:09.233+05:30  INFO 20880 --- [leave-request-api] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-10T17:24:09.270+05:30  INFO 20880 --- [leave-request-api] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-10T17:24:09.577+05:30  INFO 20880 --- [leave-request-api] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-10T17:24:09.611+05:30  INFO 20880 --- [leave-request-api] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-10T17:24:09.816+05:30  INFO 20880 --- [leave-request-api] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@724a3c52
+2025-06-10T17:24:09.818+05:30  INFO 20880 --- [leave-request-api] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-10T17:24:09.846+05:30  WARN 20880 --- [leave-request-api] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-10T17:24:09.868+05:30  INFO 20880 --- [leave-request-api] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-10T17:24:10.765+05:30  INFO 20880 --- [leave-request-api] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-10T17:24:10.808+05:30  INFO 20880 --- [leave-request-api] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T17:24:11.183+05:30  INFO 20880 --- [leave-request-api] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authProvider
+2025-06-10T17:24:11.183+05:30  WARN 20880 --- [leave-request-api] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-10T17:24:11.288+05:30  WARN 20880 --- [leave-request-api] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-10T17:24:11.867+05:30  INFO 20880 --- [leave-request-api] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-10T17:24:11.898+05:30  INFO 20880 --- [leave-request-api] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-10T17:24:11.912+05:30  INFO 20880 --- [leave-request-api] [restartedMain] c.m.l.LeveformApplication                : Started LeveformApplication in 5.4 seconds (process running for 5.976)
+2025-06-10T17:24:33.412+05:30  INFO 20880 --- [leave-request-api] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-10T17:24:33.412+05:30  INFO 20880 --- [leave-request-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-10T17:24:33.415+05:30  INFO 20880 --- [leave-request-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-10T17:24:33.655+05:30 DEBUG 20880 --- [leave-request-api] [http-nio-8080-exec-2] org.hibernate.SQL                        : select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-06-10T17:24:33.969+05:30 DEBUG 20880 --- [leave-request-api] [http-nio-8080-exec-2] org.hibernate.SQL                        : select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-06-10T17:24:34.306+05:30 DEBUG 20880 --- [leave-request-api] [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into audit_log (action,additional_info,ip_address,resource,timestamp,username) values (?,?,?,?,?,?)
+2025-06-10T17:24:34.480+05:30 DEBUG 20880 --- [leave-request-api] [http-nio-8080-exec-6] org.hibernate.SQL                        : select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-06-10T17:24:34.480+05:30 DEBUG 20880 --- [leave-request-api] [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-06-10T17:24:34.490+05:30 DEBUG 20880 --- [leave-request-api] [http-nio-8080-exec-6] org.hibernate.SQL                        : select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-06-10T17:24:34.491+05:30 DEBUG 20880 --- [leave-request-api] [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-06-10T17:24:34.494+05:30 DEBUG 20880 --- [leave-request-api] [http-nio-8080-exec-6] org.hibernate.SQL                        : select lr1_0.id,lr1_0.end_date,lr1_0.reason,lr1_0.start_date,lr1_0.type,lr1_0.user_id from leave_requests lr1_0 where lr1_0.user_id=?
+2025-06-10T17:24:34.495+05:30 DEBUG 20880 --- [leave-request-api] [http-nio-8080-exec-5] org.hibernate.SQL                        : select lr1_0.id,lr1_0.end_date,lr1_0.reason,lr1_0.start_date,lr1_0.type,lr1_0.user_id from leave_requests lr1_0 where lr1_0.user_id=?
+2025-06-10T17:24:34.498+05:30 DEBUG 20880 --- [leave-request-api] [http-nio-8080-exec-6] org.hibernate.SQL                        : insert into audit_log (action,additional_info,ip_address,resource,timestamp,username) values (?,?,?,?,?,?)
+2025-06-10T17:24:34.498+05:30 DEBUG 20880 --- [leave-request-api] [http-nio-8080-exec-5] org.hibernate.SQL                        : insert into audit_log (action,additional_info,ip_address,resource,timestamp,username) values (?,?,?,?,?,?)
+2025-06-10T17:28:23.907+05:30  INFO 20880 --- [leave-request-api] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-10T17:28:23.912+05:30  INFO 20880 --- [leave-request-api] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-10T17:28:23.917+05:30  INFO 20880 --- [leave-request-api] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T17:28:23.922+05:30  INFO 20880 --- [leave-request-api] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-10T17:28:23.928+05:30  INFO 20880 --- [leave-request-api] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-10T17:28:26.444+05:30  INFO 3616 --- [leave-request-api] [restartedMain] c.m.l.LeveformApplication                : Starting LeveformApplication using Java 21.0.1 with PID 3616 (D:\office\leave-request-api\target\classes started by mihan in D:\office\leave-request-api)
+2025-06-10T17:28:26.447+05:30  INFO 3616 --- [leave-request-api] [restartedMain] c.m.l.LeveformApplication                : No active profile set, falling back to 1 default profile: "default"
+2025-06-10T17:28:26.518+05:30  INFO 3616 --- [leave-request-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-10T17:28:26.519+05:30  INFO 3616 --- [leave-request-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-10T17:28:27.511+05:30  INFO 3616 --- [leave-request-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-10T17:28:27.589+05:30  INFO 3616 --- [leave-request-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 3 JPA repository interfaces.
+2025-06-10T17:28:28.338+05:30  INFO 3616 --- [leave-request-api] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-10T17:28:28.413+05:30  INFO 3616 --- [leave-request-api] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1893 ms
+2025-06-10T17:28:28.669+05:30  INFO 3616 --- [leave-request-api] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-10T17:28:28.751+05:30  INFO 3616 --- [leave-request-api] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-10T17:28:28.791+05:30  INFO 3616 --- [leave-request-api] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-10T17:28:29.098+05:30  INFO 3616 --- [leave-request-api] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-10T17:28:29.136+05:30  INFO 3616 --- [leave-request-api] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-10T17:28:29.345+05:30  INFO 3616 --- [leave-request-api] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@58715989
+2025-06-10T17:28:29.348+05:30  INFO 3616 --- [leave-request-api] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-10T17:28:29.392+05:30  WARN 3616 --- [leave-request-api] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-10T17:28:29.418+05:30  INFO 3616 --- [leave-request-api] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-10T17:28:30.345+05:30  INFO 3616 --- [leave-request-api] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-10T17:28:30.396+05:30  INFO 3616 --- [leave-request-api] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T17:28:30.834+05:30  INFO 3616 --- [leave-request-api] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authProvider
+2025-06-10T17:28:30.834+05:30  WARN 3616 --- [leave-request-api] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-10T17:28:31.010+05:30  WARN 3616 --- [leave-request-api] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-10T17:28:31.556+05:30  INFO 3616 --- [leave-request-api] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-10T17:28:31.594+05:30  INFO 3616 --- [leave-request-api] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-10T17:28:31.604+05:30  INFO 3616 --- [leave-request-api] [restartedMain] c.m.l.LeveformApplication                : Started LeveformApplication in 5.856 seconds (process running for 6.573)
+2025-06-10T17:28:31.607+05:30  INFO 3616 --- [leave-request-api] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-10T17:28:31.613+05:30  INFO 3616 --- [leave-request-api] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-10T17:28:31.618+05:30  INFO 3616 --- [leave-request-api] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T17:28:31.621+05:30  INFO 3616 --- [leave-request-api] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-10T17:28:31.630+05:30  INFO 3616 --- [leave-request-api] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-10T17:28:37.861+05:30  INFO 3884 --- [leave-request-api] [restartedMain] c.m.l.LeveformApplication                : Starting LeveformApplication using Java 21.0.1 with PID 3884 (D:\office\leave-request-api\target\classes started by mihan in D:\office\leave-request-api)
+2025-06-10T17:28:37.864+05:30  INFO 3884 --- [leave-request-api] [restartedMain] c.m.l.LeveformApplication                : No active profile set, falling back to 1 default profile: "default"
+2025-06-10T17:28:37.926+05:30  INFO 3884 --- [leave-request-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-10T17:28:37.927+05:30  INFO 3884 --- [leave-request-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-10T17:28:38.799+05:30  INFO 3884 --- [leave-request-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-10T17:28:38.872+05:30  INFO 3884 --- [leave-request-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 3 JPA repository interfaces.
+2025-06-10T17:28:39.570+05:30  INFO 3884 --- [leave-request-api] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-10T17:28:39.589+05:30  INFO 3884 --- [leave-request-api] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-10T17:28:39.590+05:30  INFO 3884 --- [leave-request-api] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-10T17:28:39.642+05:30  INFO 3884 --- [leave-request-api] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-10T17:28:39.643+05:30  INFO 3884 --- [leave-request-api] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1716 ms
+2025-06-10T17:28:39.892+05:30  INFO 3884 --- [leave-request-api] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-10T17:28:39.949+05:30  INFO 3884 --- [leave-request-api] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-10T17:28:39.988+05:30  INFO 3884 --- [leave-request-api] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-10T17:28:40.348+05:30  INFO 3884 --- [leave-request-api] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-10T17:28:40.380+05:30  INFO 3884 --- [leave-request-api] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-10T17:28:40.587+05:30  INFO 3884 --- [leave-request-api] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3de3e4b1
+2025-06-10T17:28:40.589+05:30  INFO 3884 --- [leave-request-api] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-10T17:28:40.626+05:30  WARN 3884 --- [leave-request-api] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-10T17:28:40.659+05:30  INFO 3884 --- [leave-request-api] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-10T17:28:41.731+05:30  INFO 3884 --- [leave-request-api] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-10T17:28:41.783+05:30  INFO 3884 --- [leave-request-api] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T17:28:42.183+05:30  INFO 3884 --- [leave-request-api] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authProvider
+2025-06-10T17:28:42.183+05:30  WARN 3884 --- [leave-request-api] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-10T17:28:42.270+05:30  WARN 3884 --- [leave-request-api] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-10T17:28:42.908+05:30  INFO 3884 --- [leave-request-api] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-10T17:28:42.942+05:30  INFO 3884 --- [leave-request-api] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-10T17:28:42.954+05:30  INFO 3884 --- [leave-request-api] [restartedMain] c.m.l.LeveformApplication                : Started LeveformApplication in 5.739 seconds (process running for 6.344)
