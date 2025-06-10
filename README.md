@@ -36,12 +36,16 @@ Prerequisites: Java 17+, Maven 3.9+, PostgreSQL (tested on)
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/mihan2002/leave-request-api.git
-cd leave-request-api
+  git clone https://github.com/mihan2002/leave-request-api.git
 ```
 
 ### 2. Configure the enviroment
 
+Change the directory to the following path 
+
+```bash
+  cd leave-request-api
+```
 Configuring Application Properties
 
 Edit src/main/resources/application.properties:
