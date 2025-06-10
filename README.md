@@ -31,6 +31,8 @@ The application includes
 
 ## 🚀 Getting Started
 
+Prerequisites: - Java 17+ - Maven 3.9+ - PostgreSQL(tested on)
+
 ### 1. Clone the Repository
 
 ```bash
@@ -39,8 +41,6 @@ cd leave-request-api
 ```
 
 ### 2. Backend Setup
-
-Prerequisites: - Java 17+ - Maven - PostgreSQL
 
 Configuring Application Properties
 
