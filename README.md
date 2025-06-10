@@ -57,8 +57,10 @@ Edit `src/main/resources/application.properties` file to configure the database 
 
 ### 3. Run the backend
 
+open a command window and change directory to the `leave-request-api` folder and run the below commands
+
 ```bash
-./mvnw spring-boot:run
+ mvnw spring-boot:run
 ```
 
 
