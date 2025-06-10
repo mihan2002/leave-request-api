@@ -50,7 +50,7 @@ Change the directory to `leave-request-api`.
 Edit `src/main/resources/application.properties` as follows to configure the database connection details.
 
 ```bash
-  spring.datasource.url=jdbc:postgresql://localhost:<your port number>/<database name>
+  spring.datasource.url=jdbc:postgresql://<host>:<your_port_number>/<database_name>
   spring.datasource.username=myuser
   spring.datasource.password=mypassword
 ```
