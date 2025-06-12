@@ -62,7 +62,13 @@ Open a command window and change directory to the `leave-request-api` folder and
 ```bash
  mvnw spring-boot:run
 ```
+### 4. Database set up
 
+Open the broweser and go to the url mentiond below.
+
+```bash
+http://localhost:8080/api/auth/login
+```
 
 ### 4. Frontend setup (Optional)
   If you haven't already setup the frontend application, please use the below link to setup the frontend application.
