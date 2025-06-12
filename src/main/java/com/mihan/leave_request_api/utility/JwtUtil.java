@@ -5,16 +5,20 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 @Component
 public class JwtUtil {
-    private static  final  String SECRET_KEY ="sJrWxE8NyN5yYK2b27F1fgFELsLpWQYQCdO7BaF4sLg=\n";
+    private static  final  String SECRET_KEY ="eyJzdWIiOiJtaWhhbiIsImlhdCI6MTc0OTYxNDkzNCwiZXhwIjoxNzQ5NjUwOTM0fQsJrWxE8NyN5yYK2b27F1fgFELsLpWQYQCdO7BaeyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaF4sLg=\n";
 
-    private final long EXPIRATION_TIME = 1000 * 60 * 60 * 10;
+    private final long EXPIRATION_TIME = 1000 * 60 * 60 * 1;
 
-    public String generateToken(String username) {
+    public String generateToken(String username,String role) {
+
         return Jwts.builder()
                 .setSubject(username)
+                .claim("role",role)
                 .setIssuedAt(new Date(System.currentTimeMillis()))
                 .setExpiration(new Date(System.currentTimeMillis() + EXPIRATION_TIME))
                 .signWith(SignatureAlgorithm.HS256, SECRET_KEY)

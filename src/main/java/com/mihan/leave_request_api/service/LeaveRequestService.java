@@ -27,7 +27,7 @@ public class LeaveRequestService {
 
 
         LeaveRequest leaveRequest = new LeaveRequest();
-        leaveRequest.setUserId(user.getId());
+        leaveRequest.setUser(user);
         leaveRequest.setType(request.getType());
         leaveRequest.setStartDate(request.getStartDate());
         leaveRequest.setEndDate(request.getEndDate());
@@ -43,7 +43,7 @@ public class LeaveRequestService {
         return leaveRequestRepo.findByUserId(user.getId());
     }
 
-    public LeaveRequest update(int id, LeaveRequest updatedRequest) {
+    public LeaveRequest update(long id, LeaveRequest updatedRequest) {
 
         LeaveRequest existingRequest = leaveRequestRepo.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Leave request not found with ID: " + id));
@@ -58,10 +58,14 @@ public class LeaveRequestService {
     }
 
 
-    public void delete(int id) {
+    public void delete(long id) {
         if (!leaveRequestRepo.existsById(id)) {
             throw new ResourceNotFoundException("Leave request not found with ID: " + id);
         }
         leaveRequestRepo.deleteById(id);
+    }
+
+    public List<LeaveRequest> getAllUsers() {
+        return leaveRequestRepo.findAll();
     }
 }

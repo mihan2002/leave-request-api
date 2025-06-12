@@ -12,8 +12,12 @@ import java.time.LocalDate;
 public class LeaveRequest {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-    private Integer userId;
+    private Long id;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "user_id")
+    private User user;
+
     private String type;
     private LocalDate startDate;
     private LocalDate endDate;

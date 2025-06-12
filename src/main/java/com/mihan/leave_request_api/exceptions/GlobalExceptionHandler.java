@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
@@ -43,5 +44,13 @@ public class GlobalExceptionHandler {
         error.put("status", status.value());
         if (details != null) error.put("details", details);
         return new ResponseEntity<>(error, status);
+    }
+
+    @ExceptionHandler(AccessDeniedException.class)
+    public ResponseEntity<?> handleAccessDeniedException(AccessDeniedException ex) {
+        Map<String, String> error = new HashMap<>();
+        error.put("error", "Forbidden");
+        error.put("message", ex.getMessage());
+        return new ResponseEntity<>(error, HttpStatus.FORBIDDEN);
     }
 }

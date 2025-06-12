@@ -13,14 +13,18 @@ import org.springframework.stereotype.Service;
 public class MyUserDetailsService implements UserDetailsService {
     @Autowired
     private UserRepo userRepo;
+
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user= userRepo.findByUsername(username).get();
-
-        if(user == null){
-            System.out.println("User "+username+"404");
-            throw  new UsernameNotFoundException("User "+username+"404");
+        try {
+            User user = userRepo.findByUsername(username).get();
+            if (user == null) {
+                throw new UsernameNotFoundException("User does not exist");
+            }
+            return user;
+        } catch (Exception e) {
+            throw new UsernameNotFoundException("User does not exist");
         }
-        return user;
+
     }
 }

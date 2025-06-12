@@ -63,7 +63,15 @@ Open a command window and change directory to the `leave-request-api` folder and
  mvnw spring-boot:run
 ```
 
-### 4. Frontend setup (Optional)
+### 4. Set up default roles and permissions
+
+Open the broweser and go to the url mentiond below.
+
+```bash
+http://localhost:8080/api/auth/setup
+```
+
+### 5. Frontend setup (Optional)
   If you haven't already setup the frontend application, please use the below link to setup the frontend application.
 ```bash
   https://github.com/mihan2002/leave-request-ui.git

@@ -4,15 +4,18 @@ import com.mihan.leave_request_api.dto.LoginRequestDto;
 import com.mihan.leave_request_api.dto.RegisterRequestDto;
 import com.mihan.leave_request_api.service.AuthService;
 import com.mihan.leave_request_api.service.AuditService;
+import com.mihan.leave_request_api.service.SetUpService;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
+import java.util.NoSuchElementException;
 
 @Slf4j
 @RequestMapping("/api/auth")
@@ -25,18 +28,22 @@ public class AuthController {
     @Autowired
     private AuditService auditService;
 
+    @Autowired
+    private SetUpService setUpService;
+
     @PostMapping("/register")
     public ResponseEntity<?> register(@RequestBody RegisterRequestDto dto, HttpServletRequest request) {
         try {
-            String token = service.register(dto);
+            service.register(dto);
             auditService.log(dto.getUsername(), "REGISTER", "User", request.getRemoteAddr(), "User registered successfully");
-            return ResponseEntity.status(HttpStatus.CREATED).body(Map.of("token", token));
+            return ResponseEntity.status(HttpStatus.CREATED).body(Map.of("message", "User registered successfully"));
+
         } catch (IllegalArgumentException e) {
             auditService.log(dto.getUsername(), "REGISTER_FAILED", "User", request.getRemoteAddr(), e.getMessage());
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of("error", e.getMessage()));
         } catch (Exception e) {
             auditService.log(dto.getUsername(), "REGISTER_FAILED", "User", request.getRemoteAddr(), "Server error");
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Map.of("error", "Server error during registration"));
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Map.of("error", e.getMessage()));
         }
     }
 
@@ -47,18 +54,33 @@ public class AuthController {
             //log.info("Received request for /hello");
             auditService.log(dto.getUsername(), "LOGIN", "User", request.getRemoteAddr(), "Login successful");
             return ResponseEntity.ok(Map.of("token", token));
-        } catch (IllegalArgumentException e) {
+        } catch (BadCredentialsException e) {
             auditService.log(dto.getUsername(), "LOGIN_FAILED", "User", request.getRemoteAddr(), e.getMessage());
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("error", e.getMessage()));
-        }
-        catch (UsernameNotFoundException e){
+        } catch (UsernameNotFoundException e) {
             auditService.log(dto.getUsername(), "LOGIN_USER_NOT_FOUND", "User", request.getRemoteAddr(), e.getMessage());
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("error", e.getMessage()));
 
-        }
-        catch (Exception e) {
+        } catch (NoSuchElementException e) {
+            auditService.log(dto.getUsername(), "LOGIN_USER_NOT_FOUND", "User", request.getRemoteAddr(), e.getMessage());
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("error", e.getMessage()));
+
+        } catch (Exception e) {
             auditService.log(dto.getUsername(), "LOGIN_FAILED", "User", request.getRemoteAddr(), "Server error");
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Map.of("error", "Server error during login"));
         }
     }
+
+    @GetMapping("/setup")
+    public ResponseEntity<?> setup() {
+        try {
+            setUpService.setUp();
+            return ResponseEntity.ok(Map.of("message", "setup the database"));
+        }catch (Exception e){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Map.of("error", e.getMessage()));
+        }
+
+
+    }
+
 }
