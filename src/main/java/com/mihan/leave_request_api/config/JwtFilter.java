@@ -15,6 +15,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
@@ -71,6 +72,8 @@ public class JwtFilter extends OncePerRequestFilter {
             sendErrorResponse(response, "JWT token has expired", HttpServletResponse.SC_UNAUTHORIZED);
         } catch (SignatureException | MalformedJwtException | UnsupportedJwtException | IllegalArgumentException e) {
             sendErrorResponse(response, "Invalid JWT token", HttpServletResponse.SC_UNAUTHORIZED);
+        } catch (UsernameNotFoundException e) {
+            sendErrorResponse(response, e.getMessage(), HttpServletResponse.SC_UNAUTHORIZED);
         }
     }
 

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface LeaveRequestRepo extends JpaRepository<LeaveRequest,Integer> {
+public interface LeaveRequestRepo extends JpaRepository<LeaveRequest,Long> {
 
-    List<LeaveRequest> findByUserId(Integer userId);
+    List<LeaveRequest> findByUserId(Long userId);
 }
