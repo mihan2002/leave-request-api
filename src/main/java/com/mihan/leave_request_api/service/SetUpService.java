@@ -3,7 +3,7 @@ package com.mihan.leave_request_api.service;
 import com.mihan.leave_request_api.model.Permission;
 import com.mihan.leave_request_api.model.Role;
 import com.mihan.leave_request_api.model.User;
-import com.mihan.leave_request_api.repo.PermissonRepo;
+import com.mihan.leave_request_api.repo.PermissionRepo;
 import com.mihan.leave_request_api.repo.RoleRepo;
 import com.mihan.leave_request_api.repo.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +22,7 @@ public class SetUpService {
     private RoleRepo roleRepo;
 
     @Autowired
-    private PermissonRepo permissonRepo;
+    private PermissionRepo permissonRepo;
 
     @Autowired
     private UserRepo userRepo;
