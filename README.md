@@ -62,7 +62,7 @@ Open a command window and change directory to the `leave-request-api` folder and
 ```bash
  mvnw spring-boot:run
 ```
-### 4. Database set up
+### 4. Set up default roles and permissions
 
 Open the broweser and go to the url mentiond below.
 
