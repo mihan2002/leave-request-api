@@ -70,7 +70,7 @@ Open the broweser and go to the url mentiond below.
 http://localhost:8080/api/auth/setup
 ```
 
-### 4. Frontend setup (Optional)
+### 5. Frontend setup (Optional)
   If you haven't already setup the frontend application, please use the below link to setup the frontend application.
 ```bash
   https://github.com/mihan2002/leave-request-ui.git
