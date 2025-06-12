@@ -67,7 +67,7 @@ Open a command window and change directory to the `leave-request-api` folder and
 Open the broweser and go to the url mentiond below.
 
 ```bash
-http://localhost:8080/api/auth/login
+http://localhost:8080/api/auth/setup
 ```
 
 ### 4. Frontend setup (Optional)
