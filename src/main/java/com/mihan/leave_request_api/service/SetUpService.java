@@ -36,9 +36,9 @@ public class SetUpService {
 
         permissions.add(new Permission("GET_ALL", "permission to get own all leave data"));
         permissions.add(new Permission("GET_ALL_USERS", "permission to get all user leave data"));
-        permissions.add(new Permission("CREATE_LEAVE", "permission to create a leve request"));
-        permissions.add(new Permission("UPDATE_LEAVE", "permission to get update leve data"));
-        permissions.add(new Permission("DELETE_LEAVE", "permission to delete leve data"));
+        permissions.add(new Permission("CREATE_LEAVE", "permission to create a leave request"));
+        permissions.add(new Permission("UPDATE_LEAVE", "permission to get update leave data"));
+        permissions.add(new Permission("DELETE_LEAVE", "permission to delete leave data"));
 
         permissonRepo.saveAll(permissions);
 
