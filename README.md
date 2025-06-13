@@ -65,7 +65,7 @@ Open a command window and change directory to the `leave-request-api` folder and
 
 ### 4. Set up default roles and permissions
 
-Open your web browser and make a GET request to the below endpoint. This will create the default roles and permissions will add an admin user to the system
+Open your web browser and make a GET request to the below endpoint. This will create the default roles and permissions and will add an admin user to the system.
 
 ```bash
 http://localhost:8080/api/auth/setup
