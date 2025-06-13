@@ -35,14 +35,14 @@ public class AuthController {
     public ResponseEntity<?> register(@RequestBody RegisterRequestDto dto, HttpServletRequest request) {
         try {
             service.register(dto);
-            auditService.log(dto.getUsername(), "REGISTER", "User", request.getRemoteAddr(), "User registered successfully");
+            auditService.log(dto.getUsername(), "REGISTER", "Auth Controller", request.getRemoteAddr(), "User registered successfully");
             return ResponseEntity.status(HttpStatus.CREATED).body(Map.of("message", "User registered successfully"));
 
         } catch (IllegalArgumentException e) {
-            auditService.log(dto.getUsername(), "REGISTER_FAILED", "User", request.getRemoteAddr(), e.getMessage());
+            auditService.log(dto.getUsername(), "REGISTER FAILED", "Auth Controller", request.getRemoteAddr(), e.getMessage());
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of("error", e.getMessage()));
         } catch (Exception e) {
-            auditService.log(dto.getUsername(), "REGISTER_FAILED", "User", request.getRemoteAddr(), "Server error");
+            auditService.log(dto.getUsername(), "REGISTER FAILED", "Auth Controller", request.getRemoteAddr(), "Server error");
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Map.of("error", e.getMessage()));
         }
     }
@@ -52,21 +52,21 @@ public class AuthController {
         try {
             String token = service.loginUser(dto);
             //log.info("Received request for /hello");
-            auditService.log(dto.getUsername(), "LOGIN", "User", request.getRemoteAddr(), "Login successful");
+            auditService.log(dto.getUsername(), "LOGIN", "Auth Controller", request.getRemoteAddr(), "Login successful");
             return ResponseEntity.ok(Map.of("token", token));
         } catch (BadCredentialsException e) {
-            auditService.log(dto.getUsername(), "LOGIN_FAILED", "User", request.getRemoteAddr(), e.getMessage());
+            auditService.log(dto.getUsername(), "LOGIN FAILED", "Auth Controller", request.getRemoteAddr(), e.getMessage());
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("error", e.getMessage()));
         } catch (UsernameNotFoundException e) {
-            auditService.log(dto.getUsername(), "LOGIN_USER_NOT_FOUND", "User", request.getRemoteAddr(), e.getMessage());
+            auditService.log(dto.getUsername(), "LOGIN USER NOT FOUND", "Auth Controller", request.getRemoteAddr(), e.getMessage());
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("error", e.getMessage()));
 
         } catch (NoSuchElementException e) {
-            auditService.log(dto.getUsername(), "LOGIN_USER_NOT_FOUND", "User", request.getRemoteAddr(), e.getMessage());
+            auditService.log(dto.getUsername(), "LOGIN USER NOT FOUND", "Auth Controller", request.getRemoteAddr(), e.getMessage());
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("error", e.getMessage()));
 
         } catch (Exception e) {
-            auditService.log(dto.getUsername(), "LOGIN_FAILED", "User", request.getRemoteAddr(), "Server error");
+            auditService.log(dto.getUsername(), "LOGIN FAILED", "Auth Controller", request.getRemoteAddr(), "Server error");
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Map.of("error", "Server error during login"));
         }
     }

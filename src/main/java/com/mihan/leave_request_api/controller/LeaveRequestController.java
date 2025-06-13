@@ -29,7 +29,7 @@ public class LeaveRequestController {
     @PostMapping
     public ResponseEntity<LeaveRequest> create(@RequestBody LeaveRequestDto request, Authentication auth, HttpServletRequest httpRequest) {
         LeaveRequest created = service.create(request, auth);
-        auditService.log(auth.getName(), "CREATE", "LeaveRequest", httpRequest.getRemoteAddr(), "Leave request created: ID=" + created.getId());
+        auditService.log(auth.getName(), "CREATE", "Leave Request", httpRequest.getRemoteAddr(), "Leave request created: ID=" + created.getId());
         return ResponseEntity.status(201).body(created);
     }
 
@@ -37,7 +37,7 @@ public class LeaveRequestController {
     @GetMapping("/all")
     public ResponseEntity<List<LeaveRequest>> getAllUser(Authentication auth, HttpServletRequest httpRequest) {
         List<LeaveRequest> list = service.getAllUsers();
-        auditService.log(auth.getName(), "READ_ALL_USERS", "LeaveRequest", httpRequest.getRemoteAddr(), "Fetched " + list.size() + " leave requests");
+        auditService.log(auth.getName(), "READ_ALL_USERS", "Leave Request", httpRequest.getRemoteAddr(), "Fetched " + list.size() + " leave requests");
         return ResponseEntity.ok(list);
     }
 
@@ -45,7 +45,7 @@ public class LeaveRequestController {
     @GetMapping
     public ResponseEntity<List<LeaveRequest>> getAll(Authentication auth, HttpServletRequest httpRequest) {
         List<LeaveRequest> list = service.getAll(auth);
-        auditService.log(auth.getName(), "READ_ALL", "LeaveRequest", httpRequest.getRemoteAddr(), "Fetched " + list.size() + " leave requests");
+        auditService.log(auth.getName(), "READ_ALL", "Leave Request", httpRequest.getRemoteAddr(), "Fetched " + list.size() + " leave requests");
         return ResponseEntity.ok(list);
     }
 
@@ -53,7 +53,7 @@ public class LeaveRequestController {
     @PutMapping("/{id}")
     public ResponseEntity<LeaveRequest> update(@PathVariable long id, @RequestBody LeaveRequest request, Authentication auth, HttpServletRequest httpRequest) {
         LeaveRequest updated = service.update(id, request);
-        auditService.log(auth.getName(), "UPDATE", "LeaveRequest", httpRequest.getRemoteAddr(), "Leave request updated: ID=" + id);
+        auditService.log(auth.getName(), "UPDATE", "Leave Request", httpRequest.getRemoteAddr(), "Leave request updated: ID=" + id);
         return ResponseEntity.ok(updated);
     }
 
@@ -61,7 +61,7 @@ public class LeaveRequestController {
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable long id, Authentication auth, HttpServletRequest httpRequest) {
         service.delete(id);
-        auditService.log(auth.getName(), "DELETE", "LeaveRequest", httpRequest.getRemoteAddr(), "Leave request deleted: ID=" + id);
+        auditService.log(auth.getName(), "DELETE", "Leave Request", httpRequest.getRemoteAddr(), "Leave request deleted: ID=" + id);
         return ResponseEntity.noContent().build();
     }
 }
